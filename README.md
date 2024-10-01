@@ -1,4 +1,3 @@
-Here’s a rewritten version of your README with enhanced clarity and details about how the tool works, highlighting that it backs up form submissions, including rate limits and usage of the FormSubmit API.
 
 ---
 
@@ -140,9 +139,29 @@ If you have suggestions for new features or bug fixes, feel free to submit a pul
 
 This project is licensed under the SDUC License. For more details, see the `LICENSE` file in the repository.
 
+
+```
+TODO
+Save Logic: Implement logic to save all information returned by the curl command used to fetch submissions from FormSubmit.
+Improved Error Handling: Enhance error handling for API requests to provide more user-friendly error messages.
+Automated Backups: Create a feature for scheduled automated backups of submissions at user-defined intervals.
+Detailed Submission Logging: Log all submissions with timestamps and user details for better tracking.
+Improved User Interface: Develop a more user-friendly interface for interacting with the tool, potentially adding a GUI.
+Future Enhancements
+The future of this project includes various enhancements to improve functionality and user experience:
+
+Real-Time Submissions: Implement real-time submission tracking by integrating with FormSubmit’s webhook system.
+File Upload: Allow users to upload files (such as profile images or documents) as part of the form submission process.
+Custom Reports: Generate customizable reports based on submission data, allowing users to analyze trends and statistics easily.
+Multi-Form Support: Enable the ability to manage multiple forms simultaneously within the tool, streamlining the backup process for users with several forms.
+Mobile Compatibility: Develop a mobile version of the tool for users to manage their submissions on the go.
+
+```
 ---
 
 ### Additional Notes
 
 - Make sure to update the tool with your correct FormSubmit API details.
 - The tool is rate-limited to **3 full requests per 24 hours**, so plan your usage accordingly.
+
+
