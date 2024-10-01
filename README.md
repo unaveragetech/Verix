@@ -137,6 +137,26 @@ The tool integrates seamlessly with FormSubmit’s API to manage your form submi
 
 ---
 
+
+| **Command**                                     | **Description**                                                                                                      |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `pip install -r requirements.txt`               | Installs all the Python package dependencies listed in the `requirements.txt` file.                                 |
+| `git clone https://github.com/YOUR_GITHUB_REPO/email-verification.git` | Clones the repository to your local machine. Replace `YOUR_GITHUB_REPO` with your actual GitHub username or organization. |
+| `cd email-verification`                         | Changes the current directory to the cloned project folder.                                                         |
+| `python email_verification.py user@example.com "John Doe"` | Runs the email verification script with the specified user email and name.                                          |
+| `python cli_tool.py`                            | Executes the command-line interface tool to interact with the backup functionality and manage submissions.          |
+| `python -m venv venv`                           | Creates a virtual environment named `venv` for isolating project dependencies.                                      |
+| `source venv/bin/activate` (Linux/Mac) or `venv\Scripts\activate` (Windows) | Activates the virtual environment. This command must be run before installing dependencies.                          |
+| `deactivate`                                    | Deactivates the virtual environment, returning to the system's default Python environment.                          |
+| `git status`                                    | Displays the status of the current Git repository, including any modified or untracked files.                       |
+| `git add .`                                     | Stages all modified and new files for the next commit.                                                             |
+| `git commit -m "Your commit message"`          | Commits staged changes with a descriptive commit message.                                                           |
+| `git push origin main`                          | Pushes committed changes to the `main` branch of the remote repository.                                            |
+
+Feel free to add any additional commands or modify existing ones based on your project's requirements!
+
+
+
 ## Customization
 
 You can customize certain aspects of the tool to fit your project’s needs. For example, if you want to customize the output format or add additional fields to be displayed, you can modify the output code in the `fetch_submissions()` and `search_submissions()` functions.
