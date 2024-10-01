@@ -58,6 +58,27 @@ cd verix-backup
 pip install -r requirements.txt
 ```
 
+
+| **File Name**           | **Description**                                                                                                              |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| `README.md`             | Contains comprehensive project documentation, including installation instructions, usage details, features, and contribution guidelines. It also includes commands for package installation via `pip`. Users can refer to this file for an overview of the project and how to get started. For more information on FormSubmit, visit [FormSubmit](https://formsubmit.co). For email services, check out [Mail.com](https://www.mail.com).  |
+| `cli_tool.py`          | This script serves as the command-line interface tool, enabling users to interact with the application's backup functionality. It allows users to retrieve submissions from FormSubmit and manage their data effectively through a user-friendly CLI. Example command to run the tool: `python cli_tool.py`.  |
+| `email_verification.py` | Implements the email verification process for user accounts. This script sends activation emails to users, followed by a verification code. Users must enter this code in the CLI to verify their accounts. This enhances the security of the application. Example activation email function:  <br>```python<br>def send_activation_email(email):<br>    # Logic to send an email<br>```|
+| `requirements.txt`      | This file lists all the Python package dependencies required to run the project. It can be used with pip to install necessary packages easily. Example command: <br>```bash<br>pip install -r requirements.txt<br>``` |
+| `secret.key`            | This file securely stores the encrypted API key and password, ensuring that sensitive information is protected and not hardcoded in the code. It is essential for maintaining user data security. Example of generating a key: <br>```python<br>from cryptography.fernet import Fernet<br>key = Fernet.generate_key()<br>``` |
+| `user_data.json`       | A JSON file that maintains user data, such as verified email addresses and associated submission data. This format allows for easy access and management of user information. Example structure: <br>```json<br>{<br>  "user@example.com": {<br>    "api_key": "encrypted_api_key",<br>    "password": "hashed_password"<br>  }<br>}<br>``` |
+
+### Code Examples Table
+
+| **Functionality**                     | **Code Example**                                                                                                                                   |
+|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sending Activation Email              | ```python<br>def send_activation_email(email):<br>    # Logic to send activation email using FormSubmit API<br>```                               |
+| Verifying User Account                | ```python<br>def verify_account(code):<br>    # Logic to verify user account with the provided code<br>```                                         |
+| Fetching Submissions                  | ```python<br>def get_submissions(api_key):<br>    url = f"https://formsubmit.co/api/get-submissions/{api_key}"<br>    # Fetch submissions logic<br>``` |
+| Storing User Data                     | ```python<br>def save_user_data(email, encrypted_api_key, password):<br>    # Logic to save user data to user_data.json<br>```                     |
+
+
+
 ---
 
 ## Usage
